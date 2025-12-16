@@ -3,7 +3,7 @@ title: 'SAM-FE: Segment Anything Model Guided Feature Enhancement for Semantic C
   Detection of Remote Sensing Images'
 authors:
 - Junqing Huang
-- Tong Liu
+- Me
 - Chan-Tong Lam
 - Xiaochen Yuan
 date: '2025-07-01'

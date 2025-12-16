@@ -38,5 +38,10 @@ hugoblox:
       enable: true
     reading_time:
       enable: true
+    citations:
+      style: ieee
   search:
     enable: true
+  locale:
+    date_format: 2006-01-02
+    time_format: 15:04

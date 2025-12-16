@@ -14,33 +14,30 @@ postnominals:
 status:
   icon: "👩‍💻"
 role: "Macao Polytechnic University - University of Coimbra"
-bio: "\n"
-affiliations:
-  - name: "Meta AI"
-    url: "https://ai.meta.com/"
+bio: ""
+affiliations: []
 links:
+  - icon: "hero/at-symbol"
+    url: "mailto:maodou1203lt@gmail.com"
+    label: "Email"
   - icon: "academicons/google-scholar"
     url: "https://scholar.google.com/citations?hl=zh-CN&user=PS86g9cAAAAJ&view_op=list_works&sortby=pubdate"
   - icon: "academicons/orcid"
     url: "https://orcid.org/0000-0002-7930-2022"
   - icon: "academicons/researchgate"
     url: "https://www.researchgate.net/profile/Tong-Liu-140"
-    label: "ResearchGate"
-  - icon: "hero/at-symbol"
-    url: "mailto:maodou1203lt@gmail.com"
-    label: "Email Me"
 interests:
-  - "Large Language Models"
-  - "Computer Vision"
-  - "Reinforcement Learning"
-  - "AI Ethics"
+  - "Multimedia Forensics and Security"
+  - "AI Model Security"
+  - "Digital Watermarking"
+  - "Tampering Self-Recovery"
 education: []
 experience:
   - role: "PhD in Computer Applied Technology"
     org: "Macao Polytechnic University"
     start: "2022-09-01"
     end: "2025-11-26"
-    summary: "Joint Ph.D. program"
+    summary: "Joint Ph.D. program\n"
   - role: "PhD in Informatics Engineering"
     org: "University of Coimbra"
     start: "2022-09-01"
@@ -87,3 +84,7 @@ awards:
     summary: "Awarded for groundbreaking work on efficient training of large models."
     icon: "hero/trophy"
 weight: null
+ids:
+  orcid: "0000-0002-7930-2022"
+  google_scholar: "PS86g9cAAAAJ&hl"
+  research_gate: "Tong_Liu140"

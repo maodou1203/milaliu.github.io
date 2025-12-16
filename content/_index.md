@@ -116,7 +116,7 @@ sections:
           - publications
         exclude_featured: false
     design:
-      view: masonry
+      view: citation-with-images # Change the view to include images with citations
   # - block: collection
   #   id: talks
   #   content:
