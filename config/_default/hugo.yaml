@@ -23,10 +23,10 @@ removePathAccents: true
 
 build:
   writeStats: true
-enableGitInfo: false
+enableGitInfo: false              
 summaryLength: 30
 pagination:
-  pagerSize: 10
+  pagerSize: 100
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
@@ -35,11 +35,11 @@ disableAliases: true
 outputs:
   home: [HTML, RSS, headers, redirects, backlinks]
   section: [HTML, RSS]
-imaging:
-  resampleFilter: lanczos
-  quality: 90
-  anchor: smart
-  hint: picture
+# imaging:
+#   resampleFilter: none
+#   quality: 90
+#   anchor: smart
+#   hint: picture
 timeout: 600000
 taxonomies:
   author: authors

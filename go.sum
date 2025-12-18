@@ -1,4 +1,10 @@
+github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5 v5.9.7 h1:QPek2BL723n+uM4DjyV97qNIoPsmt/vnKAQyaGJbgvQ=
+github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5 v5.9.7/go.mod h1:xZiTEEurbEwj/NhZohozvlyLCGVCT2wARHDAJeqKG/c=
+github.com/HugoBlox/hugo-blox-builder/modules/blox-core v0.3.1/go.mod h1:So8+V2U+TNxlXmcpZfdDX0muLh3PdJ7z92h30sv3bZg=
+github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-decap-cms v0.2.0 h1:CC5DY5yWvAyBjg7R0PCrLsKDSzdTVFZ8YHs7hR3OKSY=
+github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-decap-cms v0.2.0/go.mod h1:Njlsj3S1Z833TdX1nacJZzsiwGGhOq4Nilzo2BH/wQ8=
 github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v0.0.0-20251201030931-373eb7966ed8 h1:X9bH4N+Gi0F4URK8VtNplN5alz/fEBbo1V5oGZ03n+o=
 github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v0.0.0-20251201030931-373eb7966ed8/go.mod h1:C7jfxMLv1bEUqbM9XDSmEpfOpS8w06OgqNDEcbuRgL4=
+github.com/HugoBlox/hugo-blox-builder/modules/blox-seo v0.2.2/go.mod h1:NsESu6cEms1DgH84icCyylElg2Zu8A0f7Fma5JR0LZE=
 github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.0.0-20251207015048-f0eb4a7e9c4d h1:RyRkSXYDvWAugL7tz1zFA9Iq7nlSVIyS7Lk8CnaDsb8=
 github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.0.0-20251207015048-f0eb4a7e9c4d/go.mod h1:blQEm4Y+xVVX9OTVDnO+p0MwHTy3hQdpU6pZK659DiI=

@@ -2,7 +2,7 @@
 title: 'GHCW: A novel Guarded High-fidelity Compression-based Watermarking scheme
   for AI model protection and self-recovery'
 authors:
-- Tong Liu
+- me
 - Xiaochen Yuan
 - Wei Ke
 - Chan-Tong Lam
@@ -36,4 +36,12 @@ abstract: Artificial Intelligence (AI) models are valuable and frequently face m
 links:
 - name: URL
   url: https://linkinghub.elsevier.com/retrieve/pii/S1568494625008877
+
+featured: true
+
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: false
+
 ---

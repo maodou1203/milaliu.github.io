@@ -1,0 +1,26 @@
+{{/* Hugo Blox: Buttons */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+<div class="flex items-center flex-col mx-auto w-full justify-center mt-4 px-0 pb-5">
+
+{{ range $index, $item := $block.content.buttons }}
+  <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="flex items-center w-1/3 min-w-[180px] max-w-[260px] mx-auto rounded-xl border border-gray-200 bg-white mb-3 px-4 py-2 transition hover:bg-gray-50">
+  <div class="flex text-center w-full">
+    <div class="w-8 h-8 text-gray-600">
+      {{ with .icon }}
+        {{ partial "functions/get_icon" (dict "name" . "attributes" "height=\"40\" width=\"40\" class=\"rounded-sm\"") }}
+      {{ end }}
+    </div>
+    <div class="flex justify-center items-center font-semibold w-full text-gray-800 -ml-8">
+      {{ .text | markdownify | emojify }}
+    </div>
+    </div>
+  </a>
+{{end}}
+
+</div>

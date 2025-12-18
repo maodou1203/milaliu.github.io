@@ -3,7 +3,7 @@ title: 'RNPM: Neural-Guided Embedding Region Selection and Error Correction for 
   Audio Multi-Watermarking'
 authors:
 - Qiutong Li
-- Tong Liu
+- me
 - Xiaochen Yuan
 date: '2025-01-01'
 publishDate: '2025-12-15T15:16:09.222904Z'

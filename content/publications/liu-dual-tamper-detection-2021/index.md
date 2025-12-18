@@ -2,7 +2,7 @@
 title: A dual-tamper-detection method for digital image authentication and content
   self-recovery
 authors:
-- Tong Liu
+- me
 - Xiaochen Yuan
 date: '2021-08-01'
 publishDate: '2025-12-15T15:16:09.239431Z'

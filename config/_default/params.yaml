@@ -6,17 +6,17 @@ hugoblox:
     tagline: "AI Researcher "
     description: Dr. Tong Liu is a dual Ph.D. graduate jointly trained by Macao Polytechnic University and the University of Coimbra
   theme:
-    mode: system
+    mode: light
     pack: minimal
     colors:
       primary: ""
       secondary: ""
       neutral: ""
   typography:
-    font: sans
+    font: native
     size: md
   layout:
-    radius: md
+    radius: full
     spacing: comfortable
     avatar_shape: circle
   header:
@@ -39,7 +39,7 @@ hugoblox:
     reading_time:
       enable: true
     citations:
-      style: ieee
+      style: apa
   search:
     enable: true
   locale:

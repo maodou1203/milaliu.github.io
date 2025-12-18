@@ -1,0 +1,364 @@
+/* --- Wide layout but controlled reading line length (80–100ch) --- */
+
+/*
+  Your publications single template uses a Tailwind container like:
+    <main class="... max-w-8xl ...">
+  Scope the readable measure to that container so we don't affect other pages.
+*/
+
+/* Limit readable measure while keeping the overall page container wide */
+.max-w-8xl .prose,
+.max-w-8xl .prose.max-w-none {
+  max-width: 92ch;
+  width: min(100%, 92ch);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Align title with the same readable column as Abstract/body */
+.pub-title {
+  max-width: 92ch !important;          /* match body/abstract width */
+  width: min(100%, 92ch) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.max-w-8xl .mt-4.mb-16 {
+  max-width: 92ch;          /* meta follows body width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Align the metadata/abstract grid with the readable column */
+.max-w-8xl .md\:grid-cols-\[200px_auto\] {
+  max-width: 92ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* On very large screens, allow a touch more width (up to 100ch) */
+@media (min-width: 1536px) {
+  .max-w-8xl .prose,
+  .max-w-8xl .prose.max-w-none,
+  .max-w-8xl .mt-4.mb-16,
+  .max-w-8xl .md\:grid-cols-\[200px_auto\] {
+    max-width: 100ch;
+    width: min(100%, 100ch);
+  }
+
+  .pub-title {
+    max-width: 100ch !important;
+    width: min(100%, 100ch) !important;
+  }
+}
+
+/* Abstract typography: justified like a paper */
+.pub-abstract {
+  text-align: justify;        /* 两端对齐 */
+  text-justify: inter-word;   /* 英文按单词对齐 */
+  hyphens: auto;              /* 自动断词，避免大空隙 */
+}
+
+/* Paragraph rhythm inside Abstract */
+.pub-abstract p {
+  margin: 0.75rem 0;
+}
+
+/* 移动端不做两端对齐，避免拉扯 */
+@media (max-width: 640px) {
+  .pub-abstract {
+    text-align: left;
+    hyphens: none;
+  }
+}
+
+/* --- Fix: featured image looks grey/desaturated --- */
+.featured-image,
+.featured-image-wrapper img {
+  filter: none !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .featured-image,
+  .featured-image-wrapper img {
+    filter: none !important;
+    opacity: 1 !important;
+    mix-blend-mode: normal !important;
+  }
+}
+
+
+/* ===============================
+   Publications list (citation-card) — clean row layout
+   =============================== */
+
+.view-citation-card {
+  width: 100%;
+  max-width: 1100px;
+  margin: 2.1rem auto;
+}
+
+.view-citation-card .pub-row {
+  display: grid;
+  grid-template-columns: 200px 1fr; /* fixed image column */
+  column-gap: 1.75rem;
+  align-items: start;
+}
+
+.view-citation-card .pub-thumb {
+  display: block;
+}
+
+.view-citation-card .pub-thumb--empty {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+
+.view-citation-card .pub-thumb img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  display: block;
+}
+
+.view-citation-card .pub-body {
+  min-width: 0;
+}
+
+.view-citation-card .pub-title {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.view-citation-card .pub-title a {
+  color: #1796b6dc;            /* blue title (paper-style) */
+  text-decoration: none;
+}
+
+.view-citation-card .pub-title a:hover {
+  color: #33abc9;            /* slightly darker on hover */
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+
+.view-citation-card .pub-authors {
+  margin-top: 0.3rem;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.view-citation-card .pub-authors a {
+  text-decoration: none;
+}
+
+.view-citation-card .pub-authors a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.view-citation-card .pub-venue {
+  margin-top: 0.4rem;
+  font-size: 0.93rem;
+  line-height: 1.45;
+  color: rgb(106, 107, 109);
+}
+
+.view-citation-card .pub-links {
+  margin-top: 0.4rem !important; /* Reduced margin with higher specificity */
+}
+
+.view-citation-card .pub-links a,
+.view-citation-card .pub-links .btn,
+.view-citation-card .pub-links [role="button"] {
+  border-radius: 6px;
+  font-size: 0.8rem !important; /* Slightly smaller font size with higher specificity */
+  padding: 0.2rem 0.4rem !important; /* Reduced padding with higher specificity */
+}
+
+.view-citation-card .pub-links .btn {
+  line-height: 1.2;
+}
+
+@media (prefers-color-scheme: dark) {
+  .view-citation-card .pub-venue {
+    color: rgba(96, 100, 104, 0.85);
+  }
+}
+
+@media (max-width: 768px) {
+  .view-citation-card {
+    max-width: 92ch;
+    margin: 1.5rem auto;
+  }
+
+  .view-citation-card .pub-row {
+    grid-template-columns: 1fr;
+    row-gap: 0.9rem;
+  }
+
+  .view-citation-card .pub-thumb {
+    max-width: 420px;
+  }
+}
+/* ===============================
+   Highlight my name in author list
+   =============================== */
+
+/* Bold author "Tong Liu" (slug: me) */
+
+.view-citation-card .pub-authors .author-me {
+  font-weight: 700;
+}
+
+/* ===============================
+   News block — widen content area
+   =============================== */
+
+/*
+  Hugo Blox often constrains Markdown blocks with `max-w-prose`.
+  This override widens only the News section (id: news) when the block sets
+  `design.css_class: 'news-wide'`.
+*/
+section#news.news-wide .max-w-prose,
+section#news.news-wide .prose,
+section#news.news-wide .prose.max-w-none {
+  max-width: 1000px !important;
+  width: min(100%, 1100px) !important;
+}
+
+/* Reduce side padding inside the News section */
+
+section#news.news-wide {
+  padding-left: 5 !important;
+  padding-right: 5 !important;
+}
+
+
+/* ===============================
+   News layout: date on the left, content on the right
+   =============================== */
+
+.news-item {
+  display: grid;
+  grid-template-columns: 110px 1fr; /* left date, right content */
+  column-gap: 1.5rem;
+  align-items: start;
+  margin-bottom: 1.1rem;
+}
+
+.news-date {
+  font-weight: 600;
+  color: #555;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.news-content {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+@media (max-width: 640px) {
+  .news-item {
+    grid-template-columns: 1fr; /* stack on mobile */
+    row-gap: 0.5rem;
+  }
+}
+
+/* ===============================
+   CTA button — clean button style
+   =============================== */
+
+.pub-cta {
+  display: flex;
+  justify-content: center;
+}
+
+/* Button base */
+.pub-cta .btn,
+.pub-cta a.btn,
+.pub-cta a[role="button"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+  max-width: 26px;   /* prevent it from being too wide on large screens */
+  min-width: 180px;   /* keep it button-like on small screens */
+  text-align: center;
+
+  gap: 0.5rem;
+
+  background-color: #ffffff !important;
+  color: #111827 !important;                 /* slate-900 */
+  border: 1px solid rgba(17, 24, 39, 0.12) !important;
+  border-radius: 9999px !important;
+
+  padding: 0.5rem 0.5rem !important;
+  font-size: 0.98rem !important;
+  font-weight: 700 !important;
+
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.06),
+    0 10px 25px rgba(0, 0, 0, 0.10) !important;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+/* Hover */
+.pub-cta .btn:hover,
+.pub-cta a.btn:hover,
+.pub-cta a[role="button"]:hover {
+  transform: translateY(-1px);
+  border-color: rgba(17, 24, 39, 0.18) !important;
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.08),
+    0 14px 35px rgba(0, 0, 0, 0.14) !important;
+}
+
+/* Active */
+.pub-cta .btn:active,
+.pub-cta a.btn:active,
+.pub-cta a[role="button"]:active {
+  transform: translateY(0px);
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.06),
+    0 8px 18px rgba(0, 0, 0, 0.10) !important;
+}
+
+/* Dark mode */
+.dark .pub-cta .btn,
+.dark .pub-cta a.btn,
+.dark .pub-cta a[role="button"] {
+  background-color: rgba(17, 24, 39, 0.55) !important; /* slate-900 @ 55% */
+  color: rgba(255, 255, 255, 0.92) !important;
+  border-color: rgba(229, 231, 235, 0.18) !important;  /* slate-200 */
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.35),
+    0 14px 35px rgba(0, 0, 0, 0.35) !important;
+}
+
+.dark .pub-cta .btn:hover,
+.dark .pub-cta a.btn:hover,
+.dark .pub-cta a[role="button"]:hover {
+  border-color: rgba(229, 231, 235, 0.26) !important;
+  background-color: rgba(17, 24, 39, 0.70) !important;
+}
+
+
+/* ===============================
+   Hero-tight: remove internal vertical margins
+   =============================== */
+
+.hero-tight .pt-14 {
+  padding-top: 0.2rem !important;
+}

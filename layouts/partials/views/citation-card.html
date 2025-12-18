@@ -1,0 +1,58 @@
+{{ $item := .item }}
+{{ $has_attachments := partial "functions/has_attachments" $item }} 
+{{/* Featured image (prefer HugoBlox helper, fallback to page resources match) */}}
+{{ $featured := partial "functions/get_featured_image.html" $item }}
+{{ if not $featured }}
+  {{ $featured = $item.Resources.GetMatch "featured*" }}
+{{ end }}
+
+<div class="pub-list-item view-citation-card">
+  <div class="pub-row">
+
+    {{/* Left: thumbnail */}}
+    {{ if $featured }}
+      {{ $thumb := $featured.Fill "320x240 Center" }}
+      <a class="pub-thumb" href="{{ $item.RelPermalink }}" aria-label="{{ $item.Title }}">
+        <img
+          src="{{ $thumb.RelPermalink }}"
+          width="{{ $thumb.Width }}"
+          height="{{ $thumb.Height }}"
+          alt="{{ $item.Title }}"
+          loading="lazy" />
+      </a>
+    {{ else }}
+      <div class="pub-thumb pub-thumb--empty" aria-hidden="true"></div>
+    {{ end }}
+
+    {{/* Right: content */}}
+    <div class="pub-body">
+
+      <h3 class="pub-title">
+        <a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a>
+      </h3>
+
+      <div class="pub-authors">
+        {{- $authors_html := partial "page_metadata_authors" $item -}}
+        {{- $authors_html = replaceRE `\bTong\s+Liu\b` `<strong>Tong Liu</strong>` $authors_html -}}
+        {{- $authors_html | safeHTML -}}
+      </div>
+
+      <div class="pub-venue">
+        {{ if $item.Params.publication_short }}
+          {{ $item.Params.publication_short | markdownify }}
+        {{ else if $item.Params.publication }}
+          {{ $item.Params.publication | markdownify }}
+        {{ end }}
+        {{ with $item.Date }}{{ if or $item.Params.publication_short $item.Params.publication }}, {{ end }}{{ .Format "2006" }}{{ end }}
+      </div>
+
+      {{ if $has_attachments }}
+      <div class="pub-links">
+        {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+      </div>
+      {{ end }}
+
+    </div>
+
+  </div>
+</div>

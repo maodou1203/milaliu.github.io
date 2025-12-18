@@ -1,0 +1,59 @@
+{{ $item := .item }}
+{{ $page := .page }}
+{{ $summary := partial "functions/get_summary" $item }}
+{{ $summary =  $summary | page.RenderString }}
+{{ $featured := partial "functions/get_featured_image" $item | default nil }}
+{{ if not $featured }}
+  {{ with $item.Params.image }}
+    {{ with .filename }}
+      {{ $featured = $item.Resources.GetMatch . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ if not $featured }}
+  {{ with $item.Params.featured_image }}
+    {{ $featured = $item.Resources.GetMatch . }}
+  {{ end }}
+{{ end }}
+<article class="md:grid md:grid-cols-4 md:items-start md:gap-x-8">
+  <div class="md:col-span-3 group relative flex flex-col items-start">
+    <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+      <div
+        class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
+      <a href="{{$item.RelPermalink}}"><span
+        class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span><span class="relative z-10">{{$item.Title}}</span></a>
+    </h2>
+    {{/* Authors and Journal (two-line) */}}
+    {{ $authors := $item.Params.authors | default nil }}
+    {{ $journal := (or $item.Params.journal $item.Params.publication) | default nil }}
+    {{ $year := (or $item.Params.year ($item.Date | time.Format "2006")) | default nil }}
+
+    {{ with $authors }}
+      <div class="relative z-10 mt-1 text-sm text-zinc-700 dark:text-zinc-300">
+        {{ delimit . ", " }}
+      </div>
+    {{ end }}
+
+    {{ if or $journal $year }}
+      <div class="relative z-10 mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+        {{ with $journal }}<span class="font-semibold">{{ . | markdownify | plainify }}</span>{{ end }}{{ if and $journal $year }}, {{ end }}{{ with $year }}{{ . }}{{ end }}
+      </div>
+    {{ end }}
+    {{ with $featured }}
+      <a class="relative z-10 order-first mb-3 block md:hidden" href="{{$item.RelPermalink}}" aria-label="{{$item.Title}}">
+        <img class="w-full rounded-xl object-cover aspect-[16/9]" src="{{ .RelPermalink }}" alt="{{$item.Title}}" loading="lazy" />
+      </a>
+    {{ end }}
+    <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-primary-500">
+    {{ T "read_more" | default "Read more" }}
+      <svg aria-hidden="true" class="ml-1 h-4 w-4 stroke-current" fill="none" viewBox="0 0 16 16">
+        <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+      </svg>
+    </div>
+  </div>
+  {{ with $featured }}
+    <a class="hidden md:block relative z-10 md:self-start md:col-span-1" href="{{$item.RelPermalink}}" aria-label="{{$item.Title}}">
+      <img class="w-full object-cover " src="{{ .RelPermalink }}" alt="{{$item.Title}}" loading="lazy" />
+    </a>
+  {{ end }}
+</article>

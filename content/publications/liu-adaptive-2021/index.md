@@ -2,7 +2,7 @@
 title: Adaptive feature calculation and diagonal mapping for successive recovery of
   tampered regions
 authors:
-- Tong Liu
+- me
 - Xiaochen Yuan
 date: '2021-07-01'
 publishDate: '2025-12-15T15:16:09.253986Z'

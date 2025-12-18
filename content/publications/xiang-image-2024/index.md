@@ -5,7 +5,7 @@ authors:
 - Yan Xiang
 - Xiaochen Yuan
 - Kaiqi Zhao
-- Tong Liu
+- me
 - Zhiyao Xie
 - Guoheng Huang
 - Jianqing Li

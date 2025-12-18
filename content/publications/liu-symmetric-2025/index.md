@@ -2,13 +2,13 @@
 title: A Symmetric Self-Embedding Mechanism for High-Fidelity Image Recovery Against
   Tampering
 authors:
-- Tong Liu
+- me
 - Xiaochen Yuan
 - Wei Ke
 - Chan-Tong Lam
 - Sio-Kei Im
 - Pedro Martins
-date: '2025-01-01'
+date: '2025-12-01'
 publishDate: '2025-12-15T15:16:09.262209Z'
 publication_types:
 - article-journal

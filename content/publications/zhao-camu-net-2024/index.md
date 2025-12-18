@@ -4,7 +4,7 @@ title: 'CAMU-Net: Copy-move forgery detection utilizing coordinate attention and
 authors:
 - Kaiqi Zhao
 - Xiaochen Yuan
-- Tong Liu
+- me
 - Yan Xiang
 - Zhiyao Xie
 - Guoheng Huang

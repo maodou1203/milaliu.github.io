@@ -4,7 +4,7 @@ title: 'FRRW: A feature extraction-based robust and reversible watermarking sche
 authors:
 - Ying Sun
 - Xiaochen Yuan
-- Tong Liu
+- me
 - Guoheng Huang
 - Zhaojun Lin
 - Jianqing Li

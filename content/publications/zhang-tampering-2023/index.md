@@ -4,7 +4,7 @@ title: Tampering localization and self-recovery using block labeling and adaptiv
 authors:
 - Qiyuan Zhang
 - Xiaochen Yuan
-- Tong Liu
+- me
 - Chan-Tong Lam
 - Guoheng Huang
 - Di Lin

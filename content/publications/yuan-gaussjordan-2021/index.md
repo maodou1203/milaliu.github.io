@@ -3,7 +3,7 @@ title: Gauss–Jordan elimination-based image tampering detection and self-recov
 authors:
 - Xiaochen Yuan
 - Xinhang Li
-- Tong Liu
+- me
 date: '2021-01-01'
 publishDate: '2025-12-15T15:16:09.231464Z'
 publication_types:

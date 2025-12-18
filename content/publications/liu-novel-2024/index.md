@@ -2,7 +2,7 @@
 title: A novel blockchain-watermarking mechanism utilizing interplanetary file system
   and fast walsh hadamard transform
 authors:
-- Tong Liu
+- me
 - Si-Nga Lai
 - Xiaochen Yuan
 - Yue Liu

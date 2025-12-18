@@ -2,7 +2,7 @@
 title: A Two-Phase Scheme by Integration of Deep and Corner Feature for Balanced Copy-Move
   Forgery Localization
 authors:
-- Tong Liu
+- me
 - Xiaochen Yuan
 - Zhiyao Xie
 - Kaiqi Zhao
@@ -44,4 +44,10 @@ tags:
 links:
 - name: URL
   url: https://ieeexplore.ieee.org/document/10738218/?arnumber=10738218
+
+image:
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  focal_point: ''
+  preview_only: false
+
 ---

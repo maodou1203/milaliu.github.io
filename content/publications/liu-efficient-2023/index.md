@@ -1,7 +1,7 @@
 ---
 title: An Efficient Mathematical Method for Recovery of Tampered Image Content
 authors:
-- Tong Liu
+- me
 - Xiaochen Yuan
 - Chan-Tong Lam
 date: '2023-08-01'

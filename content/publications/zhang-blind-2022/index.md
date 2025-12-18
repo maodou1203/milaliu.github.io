@@ -3,7 +3,7 @@ title: Blind Dual Watermarking Scheme Using Stucki Kernel and SPIHT for Image Se
 authors:
 - Qiyuan Zhang
 - Xiaochen Yuan
-- Tong Liu
+- me
 date: '2022-01-01'
 publishDate: '2025-12-15T15:16:09.142986Z'
 publication_types:

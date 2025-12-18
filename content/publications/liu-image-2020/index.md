@@ -1,7 +1,7 @@
 ---
 title: Image Self-Recovery Based on Authentication Feature Extraction
 authors:
-- Tong Liu
+- me
 - Xiaochen Yuan
 date: '2020-12-01'
 publishDate: '2025-12-15T15:16:09.166461Z'
