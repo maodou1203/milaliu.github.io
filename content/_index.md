@@ -105,27 +105,27 @@ sections:
       title: 'News'
       text: |-
         <div class="news-item">
-          <div class="news-date">2025.11.26</div>
-          <div class="news-content">🎓 Successfully defended my Ph.D. dissertation and obtained dual Ph.D. degrees, with <strong>Distinction and Honors (<em>summa cum laude</em>)</strong> awarded by the University of Coimbra, Portugal.</div>
+          <div class="news-date">2025.11 </div>
+          <div class="news-content">Successfully defended my Ph.D. dissertation and obtained dual Ph.D. degrees, with <strong>Distinction and Honors (<em>summa cum laude</em>)</strong> awarded by the University of Coimbra, Portugal.</div>
         </div>
         <div class="news-item">
-          <div class="news-date">2025.11.24</div>
+          <div class="news-date">2025.11</div>
           <div class="news-content"> 🎉 SSEM-HIR is accepted by <em><strong>IEEE Transactions on Information Forensics and Security (TIFS)</em></strong>.</div>
         </div>
         <div class="news-item">
-          <div class="news-date">2025.10.30</div>
+          <div class="news-date">2025.10</div>
           <div class="news-content">🎉 One Chinese invention patent is granted.</div>
         </div>
         <div class="news-item">
-          <div class="news-date">2025.07.10</div>
+          <div class="news-date">2025.07</div>
           <div class="news-content">🎉 GHCW is accepted by <em><strong>Applied Soft Computing (ASOC)</em></strong>.</div>
         </div>
         <div class="news-item">
-          <div class="news-date">2025.08.26</div>
+          <div class="news-date">2025.08</div>
           <div class="news-content">🎉 One Chinese invention patent is officially granted.</div>
         </div>
         <div class="news-item">
-          <div class="news-date">2024.10.02</div>
+          <div class="news-date">2024.10</div>
           <div class="news-content">🎉 One paper is accepted by <em><strong>IEEE Transactions on Industrial Informatics (TII)</em></strong>.</div>
         </div>
     design:
@@ -181,7 +181,42 @@ sections:
         gradient_start: "#8ebdd7ff"
         gradient_end: "#7c3aed"
         text_color_light: true
-      
+  
+  - block: resume-awards
+    content:
+      title: Scholarship & Honors
+      username: me
+    design:
+      columns: "2"
+
+  - block: markdown
+    id: news
+    content:
+      title: 'Beyond research'
+      text: |-
+        <div class="news-item">
+          <div class="news-content">📷 Polaroid addict, I like my memories instant..</div>
+        </div>
+        <div class="news-item">
+          <div class="news-content">🐱 Owned a cat who bites a lot, but is also extremely clingy.</div>
+        </div>
+        <div class="news-item">
+          <div class="news-content">🪂 Survived a 233m bungee jump from the Macao Tower, would do it again (maybe)</div>
+        </div>
+        <div class="news-item">
+          <div class="news-content">🧋 Unsweetened milk tea only.</div>
+        </div>
+        <div class="news-item">
+          <div class="news-content"> ✈️ A life experience seeker, always happy to be on the road. Been to 🇳🇴🇫🇮🇵🇹🇯🇵🇸🇬🇫🇷🇪🇸🇮🇹🇬🇷🇨🇿🇭🇺</em></strong>.</div>
+        </div>
+    design:
+      css_class: 'news-simple'
+      spacing:
+        # Top, Right, Bottom, Left
+        padding: ['3rem', '0', '1rem', '0']
+      background:
+        color: 'white'
+        text_color_light: false
   # - block: collection
   #   id: talks
   #   content:

@@ -12,7 +12,7 @@ main:
     identifier: leRO_FLx
     url: /publications/
     weight: 20
-  - name: Experience
-    identifier: fsHExKJR
-    url: experience/
-    weight: 30
+  # - name: Experience
+  #   identifier: fsHExKJR
+  #   url: experience/
+  #   weight: 30

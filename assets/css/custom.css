@@ -242,9 +242,10 @@ section#news.news-wide {
 
 /* ===============================
    News layout: date on the left, content on the right
+   (scoped to the News block when css_class = news-wide)
    =============================== */
 
-.news-item {
+section#news.news-wide .news-item {
   display: grid;
   grid-template-columns: 110px 1fr; /* left date, right content */
   column-gap: 1.5rem;
@@ -252,23 +253,60 @@ section#news.news-wide {
   margin-bottom: 1.1rem;
 }
 
-.news-date {
+section#news.news-wide .news-date {
   font-weight: 600;
   color: #555;
   white-space: nowrap;
   font-size: 1rem;
 }
 
-.news-content {
+section#news.news-wide .news-content {
   line-height: 1.6;
   font-size: 1rem;
 }
 
 @media (max-width: 640px) {
-  .news-item {
+  section#news.news-wide .news-item {
     grid-template-columns: 1fr; /* stack on mobile */
     row-gap: 0.5rem;
   }
+}
+
+/* ===============================
+   News layout: simple (no left/right split)
+   Use: set News markdown block `design.css_class: 'news-simple'`
+   =============================== */
+/* Widen text measure for news-simple */
+section#news.news-simple .max-w-prose,
+section#news.news-simple .prose,
+section#news.news-simple .prose.max-w-none {
+  max-width: 800%!important;
+  width: min(100%, 810px) !important;
+}
+section#news.news-simple .news-item {
+  margin-bottom: 1.5rem;
+}
+
+section#news.news-simple .news-date {
+  display: inline;
+  font-weight: 600;
+  color: rgba(55, 65, 81, 0.85);
+  font-size: 0.92rem;
+  margin-right: 0.5rem;
+}
+
+section#news.news-simple .news-content {
+  display: inline;
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+.dark section#news.news-simple .news-date {
+  color: rgba(229, 231, 235, 0.75);
+}
+
+.dark section#news.news-simple .news-content {
+  color: rgba(229, 231, 235, 0.92);
 }
 
 /* ===============================
@@ -288,7 +326,7 @@ section#news.news-wide {
   align-items: center;
   justify-content: center;
   width: 33%;
-  max-width: 26px;   /* prevent it from being too wide on large screens */
+  max-width: 260px;   /* prevent it from being too wide on large screens */
   min-width: 180px;   /* keep it button-like on small screens */
   text-align: center;
 
