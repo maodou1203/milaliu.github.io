@@ -106,7 +106,7 @@ sections:
       text: |-
         <div class="news-item">
           <div class="news-date">2025.11 </div>
-          <div class="news-content">Successfully defended my Ph.D. dissertation and obtained dual Ph.D. degrees, with <strong>Distinction and Honors (<em>summa cum laude</em>)</strong> awarded by the University of Coimbra, Portugal.</div>
+          <div class="news-content"> 🎓 Successfully defended my Ph.D. dissertation and obtained dual Ph.D. degrees, with <strong>Distinction and Honors (<em>summa cum laude</em>)</strong> awarded by the University of Coimbra, Portugal.</div>
         </div>
         <div class="news-item">
           <div class="news-date">2025.11</div>
@@ -184,7 +184,7 @@ sections:
   
   - block: resume-awards
     content:
-      title: Scholarship & Honors
+      title: Scholarship & Awards
       username: me
     design:
       columns: "2"

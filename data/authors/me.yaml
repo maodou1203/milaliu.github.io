@@ -78,11 +78,11 @@ languages:
     level: 4
     label: "Fluent"
 awards:
-  - title: "PhD degree with Distinction and Honors (summa cum laude)"
-    awarder: "University of Coimbra"
-    date: "2025-11-26"
-    summary: "Conferred with the highest academic distinction"
-    icon: "hero/trophy"
+  # - title: "PhD degree with Distinction and Honors (summa cum laude)"
+  #   awarder: "University of Coimbra"
+  #   date: "2025-11-26"
+  #   summary: "Conferred with the highest academic distinction"
+  #   icon: "hero/trophy"
   - title: "Full PhD Scholarship"
     awarder: "Macao Polytechnic University"
     date: "2022-09-01"
