@@ -45,3 +45,6 @@ hugoblox:
   locale:
     date_format: 2006-01-02
     time_format: 15:04
+  analytics:
+    google:
+      measurement_id: G-Y052G8CP2R
