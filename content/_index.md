@@ -207,6 +207,9 @@ sections:
           <div class="news-content">🧋 Unsweetened milk tea only.</div>
         </div>
         <div class="news-item">
+          <div class="news-content"> 🌍 Another life experience unlocked: visited the world’s northernmost city. (still thawing).</div>
+        </div>
+        <div class="news-item">
           <div class="news-content"> ✈️ A life experience seeker, always happy to be on the road. Been to 🇳🇴🇫🇮🇵🇹🇯🇵🇸🇬🇫🇷🇪🇸🇮🇹🇬🇷🇨🇿🇭🇺</em></strong>.</div>
         </div>
     design:
