@@ -28,9 +28,9 @@ sections:
           <p>🌟🌟🌟I am actively seeking <u>postdoctoral research</u> opportunities.</p>
         </div>
       # Show a call-to-action button under your biography? (optional)
-      # button:
-      #   text: Download CV
-      #   url: uploads/resume.pdf
+      button:
+        text: Download CV
+        url: uploads/
       headings:
         about: 'Hi!👋 I’m Mila!'
         interests: 'Research Interests'
@@ -198,7 +198,7 @@ sections:
           <div class="news-content">📷 Polaroid addict, I like my memories instant..</div>
         </div>
         <div class="news-item">
-          <div class="news-content">🐱 Owned a cat who bites a lot, but is also extremely clingy.</div>
+          <div class="news-content">🐱 Owned by a cat who bites a lot, but is also extremely clingy.</div>
         </div>
         <div class="news-item">
           <div class="news-content">🪂 Survived a 233m bungee jump from the Macao Tower, would do it again (maybe)</div>
