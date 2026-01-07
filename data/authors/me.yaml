@@ -25,7 +25,7 @@ links:
   - icon: "academicons/orcid"
     url: "https://orcid.org/0000-0002-7930-2022"
   - icon: "academicons/researchgate"
-    url: "https://www.researchgate.net/profile/Tong-Liu-140"
+    url: "https://www.researchgate.net/profile/Tong_Liu140"
 interests:
   - "Multimedia Forensics and Security"
   - "AI Model Security"
@@ -78,11 +78,6 @@ languages:
     level: 4
     label: "Fluent"
 awards:
-  # - title: "PhD degree with Distinction and Honors (summa cum laude)"
-  #   awarder: "University of Coimbra"
-  #   date: "2025-11-26"
-  #   summary: "Conferred with the highest academic distinction"
-  #   icon: "hero/trophy"
   - title: "Full PhD Scholarship"
     awarder: "Macao Polytechnic University"
     date: "2022-09-01"
@@ -91,12 +86,9 @@ awards:
   - title: "Half Scholarship"
     awarder: "Macau University of Science and Technology"
     date: "2018-09-01"
-    # summary: "Éatribuída a Bolsa de Estudo Dr. Ho Chun."
     icon: "hero/trophy"
   - title: "1st-prize of provincial Innovative Physics Competition of University Students"
-    # awarder: "Macao Polytechnic University "
     date: "2017-12-01"
-    # summary: "Éatribuída a Bolsa de Estudo Dr. Ho Chun."
     icon: "hero/trophy"
 weight: null
 ids:
