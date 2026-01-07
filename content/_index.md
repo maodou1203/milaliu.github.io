@@ -105,6 +105,10 @@ sections:
       title: 'News'
       text: |-
         <div class="news-item">
+          <div class="news-date">2026.01</div>
+          <div class="news-content"> 🎉 One paper is accepted by <em><strong>Expert Systems With Applications (ESWA)</em></strong>.</div>
+        </div>
+        <div class="news-item">
           <div class="news-date">2025.11 </div>
           <div class="news-content"> 🎓 Successfully defended my Ph.D. dissertation and obtained dual Ph.D. degrees, with <strong>Distinction and Honors (<em>summa cum laude</em>)</strong> awarded by the University of Coimbra, Portugal.</div>
         </div>
