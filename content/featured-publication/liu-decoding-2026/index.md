@@ -2,7 +2,7 @@
 title: Decoding coefficients recovery based on modified gauss-jordan elimination for
   tampered content reconstruction
 authors:
-- me
+- Tong Liu
 - Lihao Zhuang
 - Guoheng Huang
 - Chi-Man Pun
