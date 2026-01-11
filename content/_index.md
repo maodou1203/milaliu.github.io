@@ -30,7 +30,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/
+        url: uploads/TongLiu-CV-2026.pdf
       headings:
         about: 'Hi!👋 I’m Mila!'
         interests: 'Research Interests'
