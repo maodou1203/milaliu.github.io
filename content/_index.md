@@ -105,6 +105,10 @@ sections:
       title: 'News'
       text: |-
         <div class="news-item">
+          <div class="news-date">2026.03</div>
+          <div class="news-content">🎉 One Chinese invention patent is granted.</div>
+        </div>
+        <div class="news-item">
           <div class="news-date">2026.01</div>
           <div class="news-content"> 🎉 One paper is accepted by <em><strong>Expert Systems With Applications (ESWA)</em></strong>.</div>
         </div>
