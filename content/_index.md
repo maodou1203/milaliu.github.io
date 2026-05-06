@@ -25,7 +25,6 @@ sections:
           <p> I am currently affiliated with <a class="bio-link" href="https://hypersec.research.st/">Hyperdimensional Multimedia Perception and Frontier Security Laboratory</a> at Macao Polytechnic University.</p>
           <p>I received dual Ph.D. degrees, one in Computer Applied Technology from <a class="bio-link" href="https://www.mpu.edu.mo/en/index.php">Macao Polytechnic University</a>, and the other in Informatics Engineering from <a class="bio-link" href="https://www.uc.pt/en/">University of Coimbra</a>, under the supervision of Assoc. Prof. <a class="bio-link" href="https://hypersec.research.st/pages/8477">Xiaochen Yuan</a> and Assoc. Prof. <a class="bio-link" href="https://www.cisuc.uc.pt/en/people/pedro-martins">Pedro Martins</a>.</p>
           <p>My research focuses on information security, particularly image tampering detection and self-recovery, AI model security, and digital watermarking. To date, I've published over 20 journal and conference papers, including IEEE TIFS, IEEE TII, and IEEE TCSVT, among others.</p>
-          <p>🌟🌟🌟I am actively seeking <u>postdoctoral research</u> opportunities.</p>
         </div>
       # Show a call-to-action button under your biography? (optional)
       button:
