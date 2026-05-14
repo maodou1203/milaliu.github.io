@@ -104,6 +104,10 @@ sections:
       title: 'News'
       text: |-
         <div class="news-item">
+          <div class="news-date">2026.05</div>
+          <div class="news-content"> 🎉 One paper is accepted by <em><strong>IEEE Transactions on Industrial Informatics (TII)</em></strong>.</div>
+        </div>
+        <div class="news-item">
           <div class="news-date">2026.03</div>
           <div class="news-content">🎉 One Chinese invention patent is granted.</div>
         </div>
