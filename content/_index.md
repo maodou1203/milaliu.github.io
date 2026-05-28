@@ -105,6 +105,10 @@ sections:
       text: |-
         <div class="news-item">
           <div class="news-date">2026.05</div>
+          <div class="news-content"> 🎉 One paper is accepted by <em><strong>IEEE Internet of Things Journal (IEEE IoTJ)</em></strong>.</div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">2026.05</div>
           <div class="news-content"> 🎉 One paper is accepted by <em><strong>IEEE Transactions on Industrial Informatics (TII)</em></strong>.</div>
         </div>
         <div class="news-item">
@@ -155,6 +159,7 @@ sections:
     content:
       title: Featured Publications
       text: ''
+      content: 10
       button:
         text: More Publications
         url: /publications/
