@@ -198,6 +198,22 @@ sections:
         gradient_end: "#7c3aed"
         text_color_light: true
   
+  - block: markdown
+    id: academic-service
+    content:
+      title: 'Academic service'
+      text: |-
+        <div class="news-item">
+          <div class="news-content"><strong>Reviewer:</strong> IEEE TIP, IEEE TMM, IEEE TIFS, ESWA.</div>
+        </div>
+    design:
+      css_class: 'news-simple'
+      spacing:
+        padding: ['3rem', '0', '1rem', '0']
+      background:
+        color: 'white'
+        text_color_light: false
+
   - block: resume-awards
     content:
       title: Scholarship & Awards
@@ -274,6 +290,15 @@ sections:
   #     # Reduce spacing
   #     spacing:
   #       padding: [0, 0, 0, 0]
+  - block: live-stats
+    id: live-stats
+    content:
+      title: Live Stats
+      share_url: https://cloud.umami.is/share/oKyGNgsDdplJ3NYm
+    design:
+      spacing:
+        padding: ['2rem', '0', '3rem', '0']
+
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:
