@@ -204,7 +204,7 @@ sections:
       title: 'Academic service'
       text: |-
         <div class="news-item">
-          <div class="news-content"><strong>Reviewer:</strong> IEEE TIP, IEEE TMM, IEEE TIFS, ESWA.</div>
+          <div class="news-content"><strong>Reviewer:</strong> IEEE TIP, IEEE TMM, IEEE TIFS, ESWA, EAAI.</div>
         </div>
     design:
       css_class: 'news-simple'
